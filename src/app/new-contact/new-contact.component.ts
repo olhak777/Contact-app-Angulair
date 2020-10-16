@@ -8,7 +8,11 @@ import {Component, EventEmitter, OnInit, Output} from '@angular/core';
 export class NewContactComponent implements OnInit {
   @Output() newContactEvent = new EventEmitter();
   // ---On déclare un nouvel objet vide
-  nouveauContact = {};
+  nouveauContact = {
+    name: null,
+    email: null,
+    tel: null
+  };
   constructor() { }
 
   ngOnInit(): void {
